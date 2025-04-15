@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .bg-toggled {
+    background-color: lightyellow;
+  }
+  
+  #item-list {
+    list-style-type: none;
+  }
+  
+  #item-list li {
+    margin: 5px 0;
+    padding: 8px;
+    background-color: lightblue;
+    border-radius: 5px;
+  }
+  
+  button {
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  

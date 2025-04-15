@@ -1,15 +1,18 @@
-// Change text content dynamically
+// Confirm JavaScript is running
+console.log("JavaScript is working!");
+
+// Change text dynamically
 document.getElementById("change-text-btn").addEventListener("click", () => {
   document.getElementById("main-title").textContent = "Text has been changed!";
   document.getElementById("description").textContent = "You clicked the 'Change Text' button.";
 });
 
-// Modify CSS styles dynamically
+// Toggle background style
 document.getElementById("toggle-style-btn").addEventListener("click", () => {
   document.body.classList.toggle("bg-toggled");
 });
 
-// Add a new item to the list
+// Add new list item
 document.getElementById("add-item-btn").addEventListener("click", () => {
   const ul = document.getElementById("item-list");
   const li = document.createElement("li");
@@ -17,10 +20,11 @@ document.getElementById("add-item-btn").addEventListener("click", () => {
   ul.appendChild(li);
 });
 
-// Remove the last item from the list
+// Remove last list item
 document.getElementById("remove-item-btn").addEventListener("click", () => {
   const ul = document.getElementById("item-list");
   if (ul.lastElementChild) {
     ul.removeChild(ul.lastElementChild);
   }
 });
+
